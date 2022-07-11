@@ -1,0 +1,309 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  appearance: none !important;
+  -webkit-appearance: none !important; /* safari, opera, chrome miatt */
+  border-radius: 0;
+}
+
+/* CSS reset */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+/*
+font-family: 'Inter', sans-serif;
+400, 700
+*/
+
+* {
+  font-family: "Inter", serif;
+  color: #fff;
+}
+
+.reverse-icon {
+  transform: rotate(180deg);
+}
+
+.facebook {
+  fill: hsl(208, 92%, 53%);
+}
+
+.instagram {
+  fill: url(#gradient);
+  /* fill: linear-gradient(90deg, rgba(253, 196, 104, 1) 0%, rgba(223, 73, 150, 1) 100%); */
+}
+
+/* .insta-logo {
+  width: 120px;
+  height: 120px;
+} */
+
+.twitter {
+  fill: hsl(203, 89%, 53%);
+}
+
+.youtube {
+  fill: hsl(348, 97%, 39%);
+}
+
+body {
+  background-color: #1d2029;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.header {
+  width: 100vw;
+  height: 200px;
+  padding: 30px 100px;
+
+  background-color: hsl(232, 19%, 15%);
+
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  h2 {
+    margin-top: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    color: hsl(228, 34%, 66%);
+  }
+}
+
+.platforms-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -75px;
+  gap: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .facebook-border {
+    border-top: 4px solid hsl(208, 92%, 53%);
+  }
+
+  .twitter-border {
+    border-top: 4px solid hsl(203, 89%, 53%);
+  }
+
+  /* .instagram-border {
+    border-top: 4px solid rgba(223, 73, 150, 1);
+  } */
+
+  .youtube-border {
+    border-top: 4px solid hsl(348, 97%, 39%);
+  }
+
+  .platform-card {
+    width: 200px;
+    min-width: 200px;
+    height: 170px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 3px;
+
+    background-color: hsl(228, 28%, 20%);
+
+    font-size: 10px;
+
+    .gradient-line {
+      width: 200px;
+      height: 4px;
+
+      position: relative;
+      top: -19px;
+
+      background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+
+    :nth-child(2),
+    :nth-child(4) {
+      color: hsl(228, 34%, 66%);
+    }
+
+    :nth-child(2) {
+      font-weight: 500;
+
+      span {
+        position: relative;
+        top: 4px;
+        right: 5px;
+      }
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: -10px;
+    }
+
+    :nth-child(4) {
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 0.25rem;
+    }
+
+    .red,
+    .material-icons {
+      color: red;
+      font-weight: 700;
+    }
+
+    .green,
+    .reverse-icon {
+      color: rgb(0, 180, 0);
+      font-weight: 700;
+    }
+
+    .material-icons,
+    .reverse-icon {
+      position: relative;
+      bottom: -6px;
+      font-size: 18px;
+    }
+  }
+}
+
+.overview {
+  width: 100%;
+  min-height: fit-content;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .overview-container {
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.event-card {
+  width: 200px;
+  min-width: 200px;
+  height: 100px;
+  padding: 15px 20px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  border-radius: 3px;
+
+  background-color: hsl(228, 28%, 20%);
+
+  font-size: 10px;
+  font-weight: 700;
+
+  p {
+    color: hsl(228, 34%, 66%);
+  }
+
+  :nth-child(1) span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .event-card-amount {
+    position: relative;
+    top: 8px;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .material-icons,
+  .reverse-icon {
+    position: relative;
+    bottom: -6px;
+    font-size: 18px;
+  }
+
+  .red,
+  .material-icons {
+    color: red;
+    font-weight: 700;
+  }
+
+  .green,
+  .reverse-icon {
+    color: rgb(0, 180, 0);
+    font-weight: 700;
+  }
+
+  :nth-child(3) {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}

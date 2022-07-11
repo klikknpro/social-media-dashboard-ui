@@ -1,0 +1,291 @@
+/* CSS Reset */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  /* safari, opera, chrome miatt */
+  border-radius: 0;
+}
+
+/* CSS reset */
+/*
+font-family: 'Inter', sans-serif;
+400, 700
+*/
+* {
+  font-family: "Inter", serif;
+  color: #fff;
+}
+
+.reverse-icon {
+  transform: rotate(180deg);
+}
+
+.facebook {
+  fill: #198ff5;
+}
+
+.instagram {
+  fill: url(#gradient);
+  /* fill: linear-gradient(90deg, rgba(253, 196, 104, 1) 0%, rgba(223, 73, 150, 1) 100%); */
+}
+
+/* .insta-logo {
+  width: 120px;
+  height: 120px;
+} */
+.twitter {
+  fill: #1ca0f2;
+}
+
+.youtube {
+  fill: #c4032a;
+}
+
+body {
+  background-color: #1d2029;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.header {
+  width: 100vw;
+  height: 200px;
+  padding: 30px 100px;
+  background-color: #1f212e;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.header h2 {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #8b97c6;
+}
+
+.platforms-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -75px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* .instagram-border {
+    border-top: 4px solid rgba(223, 73, 150, 1);
+  } */
+}
+
+.platforms-container .facebook-border {
+  border-top: 4px solid #198ff5;
+}
+
+.platforms-container .twitter-border {
+  border-top: 4px solid #1ca0f2;
+}
+
+.platforms-container .youtube-border {
+  border-top: 4px solid #c4032a;
+}
+
+.platforms-container .platform-card {
+  width: 200px;
+  min-width: 200px;
+  height: 170px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #252a41;
+  font-size: 10px;
+}
+
+.platforms-container .platform-card .gradient-line {
+  width: 200px;
+  height: 4px;
+  position: relative;
+  top: -19px;
+  background: linear-gradient(to right, #fdc468, #df4996);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.platforms-container .platform-card :nth-child(2),
+.platforms-container .platform-card :nth-child(4) {
+  color: #8b97c6;
+}
+
+.platforms-container .platform-card :nth-child(2) {
+  font-weight: 500;
+}
+
+.platforms-container .platform-card :nth-child(2) span {
+  position: relative;
+  top: 4px;
+  right: 5px;
+}
+
+.platforms-container .platform-card h1 {
+  font-size: 42px;
+  margin-bottom: -10px;
+}
+
+.platforms-container .platform-card :nth-child(4) {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.25rem;
+}
+
+.platforms-container .platform-card .red,
+.platforms-container .platform-card .material-icons {
+  color: red;
+  font-weight: 700;
+}
+
+.platforms-container .platform-card .green,
+.platforms-container .platform-card .reverse-icon {
+  color: #00b400;
+  font-weight: 700;
+}
+
+.platforms-container .platform-card .material-icons,
+.platforms-container .platform-card .reverse-icon {
+  position: relative;
+  bottom: -6px;
+  font-size: 18px;
+}
+
+.overview {
+  width: 100%;
+  min-height: fit-content;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.overview h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.overview .overview-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.event-card {
+  width: 200px;
+  min-width: 200px;
+  height: 100px;
+  padding: 15px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-radius: 3px;
+  background-color: #252a41;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.event-card p {
+  color: #8b97c6;
+}
+
+.event-card :nth-child(1) span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.event-card .event-card-amount {
+  position: relative;
+  top: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.event-card .material-icons,
+.event-card .reverse-icon {
+  position: relative;
+  bottom: -6px;
+  font-size: 18px;
+}
+
+.event-card .red,
+.event-card .material-icons {
+  color: red;
+  font-weight: 700;
+}
+
+.event-card .green,
+.event-card .reverse-icon {
+  color: #00b400;
+  font-weight: 700;
+}
+
+.event-card :nth-child(3) {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+/*# sourceMappingURL=index.css.map */
