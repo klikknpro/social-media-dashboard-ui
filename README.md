@@ -2,16 +2,17 @@
 
 ## School project
 
-A simpler UI design school project.
+A simple UI design school project.
 
 - [About the project](#about-the-project)
 - [Setup requirements](#setup-requirements)
 - [How to start](#how-to-start)
 - [Main technologies and services](#main-technologies-and-services)
+- [Screenshots](#screenshots)
 
 ## About the project
 
-Data is served from a simple object. The main purpose to practice React components with Sass. Layout must be responsive too.
+Data is served locally. The main purpose to practice React components with Sass. Layout must be responsive too.
 
 ## Setup requirements
 
@@ -44,3 +45,8 @@ npm start
 
 React, JS \
 CSS, Sass
+
+## Screenshots
+
+<img src="app/design/screenshot-1.png" width="800"/>
+<img src="app/design/screenshot-2.png" height="800"/>
